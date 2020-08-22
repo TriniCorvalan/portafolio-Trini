@@ -20,6 +20,10 @@ body {
     text-shadow: 0.125em 0.25em 0.125em #dc143c
 }
 
+.contact .heading {
+    text-shadow: 0.125em 0.25em 0.125em #ff1493
+}
+
 .logo {
     font-family: 'Londrina Outline', cursive;
     font-size: 3em;
@@ -65,12 +69,16 @@ body {
     width: 50%;
 }
 
-.card-image-top {
-    width: 100%;
-}
-
 .icon {
     font-size: 3em;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 1.75em;
+}
+
+.carousel-control-next-icon {
+    margin-left: 1.75em;
 }
 
 @media (min-width: 540px) {
