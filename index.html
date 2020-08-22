@@ -24,14 +24,14 @@
 
     <!--Nav bar-->
 
-    <nav class=" container-fluid navbar navbar-expand-lg navbar-dark bg-nav border-bottom border-white">
-        <a class="navbar-brand logo" href="#hero-section">TRINI</a>
+    <nav class=" container-fluid position-fixed navbar navbar-expand-lg navbar-dark bg-nav border-bottom border-white">
+        <a class="navbar-brand logo">TRINI</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse " id="navbarNav">
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#hero-section">inicio</a><span class="sr-only">(current)</span></a>
@@ -42,8 +42,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#timeline">experiencias</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">proyectos</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        proyectos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./assets/meet&coffee/index.html">meet&coffee</a>
+                        <a class="dropdown-item" href="./assets/iguanaPage/index.html">iguana page</a>
+                        <a class="dropdown-item" href="./assets/cuppon/index.html">cuppon</a>
+                        <a class="dropdown-item" href="./assets/suricata/index.html">suricata</a>
+                        <a class="dropdown-item" href="./assets/ricomida/index.html">ricomida</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">hablemos!</a>
@@ -190,32 +199,69 @@
         </div>
 
             <!--Projects-->
-        <div class="col-md-6">
+        <div class="col-md-5">
         <section id="projects" class="projects mt-5 pt-3" >
             <h2 class="heading text-center pb-5">PROYECTOS</h2>
     
-            <div class="container">
+            <div class="container mr-3">
                 <div id="carousel-projectsControls" class="carousel slide mb-5 px-5" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="assets/meet&coffee/index.html" target="_blank"><img class="w-100" src="./assets/img/meet_coffee.png" alt="meet&coffee"></a>
-                            <h3 class="text-center mt-5">Meet & Coffee</h3>
+                            <div class="card bg-transparent">
+                                <img class="card-img-top w-100" src="./assets/img/meet_coffee.png" alt="meet&coffee page">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title mt-5">Meet & Coffee</h3>
+                                    <p class="card-text">Descubre lo último en tecnología bebiendo café</p>
+                                    <a href="assets/meet&coffee/index.html" class="btn btn-secondary" target="_blank">VER MÁS</a>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="carousel-item">
-                            <a href="./assets/iguanaPage/index.html" target="_blank"><img class="w-100" src="./assets/img/iguana_page.png" alt="iguanapage"></a>
-                            <h3 class="text-center mt-5">Iguana Page</h3>
+                            <div class="card bg-transparent">
+                                <img class="card-img-top w-100" src="./assets/img/iguana_page.png" alt="iguana page">
+                                <div class="text-center card-body">
+                                    <h3 class="mt-5">Iguana Page</h3>
+                                    <p class="card-text">Aprende más sobre las iguanas</p>
+                                    <a href="./assets/iguanaPage/index.html" class="btn btn-secondary" target="_blank">VER MÁS</a>
+                                </div>
+                                    
+                            </div>
+                        </div>
+        
+                        <div class="carousel-item">
+                            <div class="card bg-transparent">
+                                <img class="card-img-top w-100" src="./assets/img/cuppon.png" alt="cuppon page">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="mt-5">Cuppon</h3>
+                                <p class="card-text">Consigue los mejores descuentos</p>
+                                <a href="./assets/cuppon/index.html" class="btn btn-secondary" target="_blank">VER MÁS</a>
+                            </div>
+                            
+                            
+                        </div>
+        
+                        <div class="carousel-item">
+                            <div class="card bg-transparent">
+                                <img class="card-img-top w-100" src="./assets/img/suricata.png" alt="suricata page">
+                                <div class="card-body text-center">
+                                    <h3 class="mt-5">Suricata</h3>
+                                    <p class="card-text">Disfruta la mejor comida</p>
+                                    <a href="./assets/suricata/index.html" class="btn btn-secondary" target="_blank">VER MÁS</a>
+                                </div>
+                            </div>
+                        </div>
 
-                        </div>
-        
                         <div class="carousel-item">
-                            <a href="./assets/cuppon/index.html" target="_blank"><img class="w-100" src="./assets/img/cuppon.png" alt="cuppon"></a>
-                            <h3 class="text-center mt-5">Cuppon</h3>
-                        </div>
-        
-                        <div class="carousel-item">
-                            <a href="./assets/suricata/index.html" target="_blank"><img class="w-100" src="./assets/img/suricata.png" alt="suricata"></a>
-                            <h3 class="text-center mt-5">Suricata</h3>
+                            <div class="card bg-transparent">
+                                <img src="./assets/img/ricomida.png" alt="ricomida page" class="card-img-top w-100">
+                                <div class="card-body text-center">
+                                    <h3 class="mt-5">Ricomida</h3>
+                                    <p class="card-text">Encuentra las mejores recetas</p>
+                                    <a href="./assets/ricomida/index.html" class="btn btn-secondary">VER MÁS</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel-projectsControls" role="button" data-slide="prev">
@@ -231,8 +277,10 @@
             </div>
         </section>
     </div>
+
     <!--Contact-->
-    <section class="contact">
+    
+    <section class="contact border-top border-white text-center">
         <h2 class="heading my-5 text-center">Contáctame</h2>
         <div class="typeform-widget" data-url="https://form.typeform.com/to/RN3TvXuT" data-transparency="100" style="width: 100%; height: 350px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=RN3TvXuT&utm_source=typeform.com-01EGBTWDH3T3N9PFHXA1WGR9GC-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> 
         </div>
@@ -243,18 +291,16 @@
     <footer class="bg-transparent border-top border-white text-center text-white py-4">
         <p class="logo text-white my-3">TRINI</p>
 
-        <i class="fab fa-github mx-5 my-2 icon"></i>
+        <a href="https://github.com/TriniCorvalan" target="_blank"><i class="fab fa-github mx-5 my-2 icon"></i></a>
 
-        <i class="fab fa-behance mx-5 my-2 icon"></i>
+        <a href="https://www.behance.net/trinidadcoc9d7" target="_blank"><i class="fab fa-behance mx-5 my-2 icon"></i></a>
 
-        <i class="fab fa-facebook mx-5 my-2 icon"></i>
+        <a href="https://www.facebook.com/trini.corvalangutierrez" target="_blank"><i class="fab fa-facebook mx-5 my-2 icon"></i></a>
 
-        <i class="fab fa-instagram mx-5 my-2 icon"></i>
+        <a href="https://www.instagram.com/trinicorvalan" target="_blank"><i class="fab fa-instagram mx-5 my-2 icon"></i></a>
 
-        <i class="fab fa-twitter mx-5 my-2 icon"></i>
-
+        <a href="https://www.twitter.com/trinicorvalan1" target="_blank"><i class="fab fa-twitter mx-5 my-2 icon"></i></a>
     </footer>
-
 
 
     <!--jQuery 3.3.1.min-->

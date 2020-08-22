@@ -1,0 +1,42 @@
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+.lobster {
+    font-family: 'Lobster', cursive;
+}
+
+.logo-size {
+    font-size: 3em;
+}
+
+.color-373a3c {
+    color: #373A3C
+}
+
+.border-dddddd{
+    border-color: #dddddd;
+}
+
+h5 {
+    font-size: 2em;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #373A3C31;
+}
+.carousel-indicators .active {
+    background-color: #373A3C;
+}
+
+@media (min-width: 540px) {
+    .recipe-section .recipe-body .border-b {
+        border-bottom: 1px solid #343a40;
+    }
+    .recipe-section .recipe-body .border-t {
+        border-block-start: 1px solid #343a40;
+    }
+}
