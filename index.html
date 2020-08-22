@@ -24,51 +24,46 @@
 
     <!--Nav bar-->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand logo" href="#hero-section">TRINI</a>
-  
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse " id="navbarNav">
+    <nav class=" container-fluid navbar navbar-expand-lg navbar-dark bg-nav border-bottom border-white">
+        <a class="navbar-brand logo" href="#hero-section">TRINI</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#hero-section">inicio</a><span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">acerca de mí</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#timeline">timeline</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#interests">intereses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">hablemos!</a>
-              </li>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hero-section">inicio</a><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">acerca de mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#timeline">experiencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">hablemos!</a>
+                </li>
             </ul>
-          </div>
         </div>
       </nav>
 
     <!--Hero section-->
 
-    <section id="hero-section" class="hero-section p-5">
-        <h1 class="display-1 p-5 border border-white d-inline-block"><img src="./assets/img/yo.png" alt="Trini icon" class="mx-5"></img>TRINI</h1>
+    <section id="hero-section" class="hero-section mt-5 mb-2 border-bottom border-white">
+        <h1 class="display-1 p-3 d-inline heading align-middle">TRINI</h1>
+        <img src="./assets/img/yo.png" alt="Trini icon" class="mx-2 d-inline display-1 align-middle"></img>
     </section>
 
     <!--About-->
 
-    <section id="about" class="border-top border-bottom border-white about m-5 d-none d-sm-block">
+    <section id="about" class="about border-bottom border-white mb-5 d-none d-sm-block">
         <div class="container text-justify py-5">
-            <h2 class="text-center pb-5">¿Quién soy?</h2>
+            <h2 class="text-center pb-5 heading">¿Quién soy?</h2>
             <div class="row">
                 <p class="col-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi harum ipsa, quo iure et asperiores beatae ex aliquid adipisci quam magnam tempore culpa quibusdam fugiat in quis temporibus illo hic!</p>
                 <p class="col-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae aliquid et saepe, optio esse expedita itaque praesentium, fuga qui numquam totam vero voluptates veniam blanditiis quo porro sit illo quia.</p>
@@ -78,12 +73,13 @@
 
     <!--Timeline-->
 
-    <section id="timeline" class=" container timeline my-5 mx-auto py-3 px-0">
+    <section id="timeline" class="border-bottom border-white timeline my-5 py-3 px-0">
+        <h2 class="heading text-center pb-5">EXPERIENCIAS</h2>
         <div class="row">
-            <div class="col-md-4 col-sm-0 mx-3">
-                <img src="./assets/img/yo.gif" alt="animation"></video>
+            <div class="col-md-5 d-none d-md-block">
+                <img src="./assets/img/yo.gif" alt="animation"></img>
             </div>
-            <div class="col-md-4 col-sm-0">
+            <div class="col-md-5">
                 <ul class="row">
                     <li class="py-2 px-4 col-6 text-right border-right border-danger">
                         <div class="time">
@@ -205,9 +201,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4 col-sm-0">
-
-            </div>
         </div>
         
 
@@ -215,11 +208,45 @@
 
     <!--Projects-->
 
+    <section id="projects" class="projects my-5 container">
+        <h2 class="heading text-center my-5">PROYECTOS</h2>
+        <div class="row justify-content-center container">
+            <div class="card bg-transparent col-md-5 m-3">
+                <a href="assets/meet&coffee/index.html" target="_blank"><img class="card-image-top" src="./assets/img/meet_coffee.png" alt="meet&coffee"></a>
+                <div class="card-body">
+                    <h3 class="card-title text-center">Meet & Coffee</h3>
+                </div>
+            </div>
+            <div class="card bg-transparent col-md-5 m-3">
+                <a href="./assets/iguanaPage/index.html" target="_blank"><img class="card-image-top" src="./assets/img/iguana_page.png" alt="iguanapage"></a>
+                <div class="card-body">
+                    <h3 class="card-title text-center">Iguana Page</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center container">
+            <div class="card bg-transparent col-md-5 m-3">
+                <a href="./assets/suricata/index.html" target="_blank"><img class="card-image-top" src="./assets/img/suricata.png" alt="suricata"></a>
+                <div class="card-body">
+                    <h3 class="card-title text-center">Suricata</h3>
+                </div>
+            </div>
+            <div class="card bg-transparent col-md-5 m-3">
+                <a href="./assets/cuppon/index.html" target="_blank"><img class="card-image-top" src="./assets/img/cuppon.png" alt="cuppon"></a>
+                <div class="card-title">
+                    <h3 class="card-body text-center">Cuppon</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
     <!--Contact-->
 
     <!--Footer-->
 
-    <footer class="bg-dark text-center text-white py-4">
+    <footer class="bg-transparent border-top border-white text-center text-white py-4">
         <p class="logo text-white my-3">TRINI</p>
 
         <i class="fab fa-github mx-5 my-2 icon"></i>

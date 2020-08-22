@@ -1,0 +1,103 @@
+body {
+    background: #000000;
+    font-family: 'Raleway', sans-serif;
+    margin: 0
+}
+
+h1, h2, p {
+    color: #ffffff;
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+h3, p, a {
+    font-weight: 300;
+}
+
+.hero-section h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.125em;
+    height: 1.18em;
+    margin: 0.55rem auto;
+}
+
+.hero-section img {
+    width: 100vw;
+}
+
+.desc-section {
+    background: #000000;
+    margin: 4.75rem 9rem;
+}
+.desc-section *, .icon, .photo-section *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.desc-image {
+    width: 42.5%;
+    margin-left: 4%;
+}
+
+.desc-text {
+    width: 52.5%;
+    vertical-align: middle;
+}
+
+.desc-text p {
+    margin: 1em;
+    font-size: 1em;
+    line-height: 1.1875em;
+}
+
+.icons-section, .footer {
+    background: #1E1A13;
+    text-align: center;
+}
+
+.icons-section {
+    padding: 5.87% 17.5% 7.85% 23.44%;
+}
+
+.icons-section h2 {
+    margin-bottom: 3.125rem;
+    font-size: 2.5em;
+    height: 1.15em;
+}
+
+.icon {
+    color: #ffffff;
+    width: 32%;
+}
+
+.icon i {
+    margin-bottom: 1rem;
+    font-size: 4em;
+}
+
+.icon h3 {
+    font-size: 1.5em;
+}
+
+.photo-section {
+    margin: 4.5625rem 9.375rem;
+}
+
+.photo {
+    width: 30%;
+    margin: 0 0.5rem;
+}
+
+.footer {
+    padding: 2.4375rem 18.6875rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.25em;
+    height: 1.2em;
+}

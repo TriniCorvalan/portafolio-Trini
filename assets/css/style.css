@@ -4,13 +4,30 @@ body {
     color: #ffffff
 }
 
+.bg-nav {
+    background-color: #000000;
+    z-index: 1;
+}
+.about .heading {
+    text-shadow: 0.125em 0.25em 0.125em #1e90ff;
+}
+
+.timeline .heading {
+    text-shadow: 0.125em 0.25em 0.125em #7cfc00;
+}
+
+.projects .heading {
+    text-shadow: 0.125em 0.25em 0.125em #dc143c
+}
+
 .logo {
     font-family: 'Londrina Outline', cursive;
     font-size: 3em;
 }
 
-.icon {
-    font-size: 3em;
+.navbar {
+    position: fixed;
+    top: 0;
 }
 
 .hero-section {
@@ -19,33 +36,41 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    padding: 7em;
+}
+
+.heading {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.5em;
 }
 
 .hero-section img {
     width: 1em;
 }
-.timeline {
-    position: relative;
+
+.timeline img {
+    width: 30vw;
+    box-sizing: content-box;
+    vertical-align: middle;
 }
 
 .timeline ul {
     margin: 0;
     padding: 0;
 }
-/* 
-.timeline ::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 2px;
-    height: 30%;
-    background: #ffffff;
-}
- */
+
 .timeline ul li {
     list-style: none;
     line-height: normal;
     width: 50%;
+}
+
+.card-image-top {
+    width: 100%;
+}
+
+.icon {
+    font-size: 3em;
 }
 
 @media (min-width: 540px) {
