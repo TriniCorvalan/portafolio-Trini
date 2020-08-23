@@ -8,8 +8,20 @@ body {
     background-color: #000000;
     z-index: 1;
 }
+
+.hero-section .heading {
+    font-size: 5em;
+    text-shadow: 0.1em 0.1em 0.05em #000000;
+}
+
+.heading {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.25em;
+    font-size: 3em;
+}
+
 .about .heading {
-    text-shadow: 0.125em 0.25em 0.125em #1e90ff;
+    text-shadow: 0.125em 0.25em 0.125em #ffff00;
 }
 
 .timeline .heading {
@@ -17,11 +29,11 @@ body {
 }
 
 .projects .heading {
-    text-shadow: 0.125em 0.25em 0.125em #dc143c
+    text-shadow: 0.125em 0.25em 0.125em #dc143c;
 }
 
 .contact .heading {
-    text-shadow: 0.125em 0.25em 0.125em #ff1493
+    text-shadow: 0.125em 0.25em 0.125em #ff1493;
 }
 
 .logo {
@@ -33,22 +45,17 @@ body {
     top: 0;
 }
 
+
 .hero-section {
-    font-family: 'Bebas Neue', cursive;
-    background-image: url(../img/hero.png);
+    background-image: url(../img/hero1.gif);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     padding: 7em;
 }
 
-.heading {
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 0.5em;
-}
-
 .hero-section img {
-    width: 1em;
+    width: 2em;
 }
 
 .timeline img {
@@ -79,10 +86,4 @@ body {
 
 .carousel-control-next-icon {
     margin-left: 1.75em;
-}
-
-@media (min-width: 540px) {
-    .hero-section {
-        text-align: right;
-    }
 }
