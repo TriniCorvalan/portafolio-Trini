@@ -1,0 +1,81 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f7d3e9;
+    color: #630035
+}
+
+.bg-burdeo {
+    color: #f7d3e9 ;
+    background-color: #630035;
+    z-index: 1;
+}
+
+.hero-section .heading-dark {
+    font-size: 5em;
+}
+
+.heading-dark {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.25em;
+    font-size: 3em;
+    text-shadow: 0.125em 0.25em 0.125em #ffffff;
+}
+
+.heading-light {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.25em;
+    font-size: 3em;
+    text-shadow: 0.125em 0.25em 0.125em #000000;
+}
+
+.logo {
+    font-family: 'Londrina Outline', cursive;
+    font-size: 3em;
+}
+
+.navbar {
+    top: 0;
+}
+
+
+.hero-section {
+    background-image: url(../img/hero2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 7em;
+}
+
+.hero-section img {
+    width: 2em;
+}
+
+.timeline img {
+    width: 30vw;
+    box-sizing: content-box;
+    vertical-align: middle;
+}
+
+.timeline ul {
+    margin: 0;
+    padding: 0;
+}
+
+.timeline ul li {
+    list-style: none;
+    line-height: normal;
+    width: 50%;
+}
+
+.icon {
+    font-size: 3em;
+    color: #ffffff;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 1.75em;
+}
+
+.carousel-control-next-icon {
+    margin-left: 1.75em;
+}
