@@ -1,2 +1,0 @@
-# portafolio-Trini
-# portafolio-Trini

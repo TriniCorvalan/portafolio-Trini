@@ -7,8 +7,7 @@
     <link rel ="shortcut icon" type= "image/png" href= "favicon.png">
 
     <!--Bootstrap 4.5 CSS-->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--Google Fonts-->
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Londrina+Outline&display=swap" rel="stylesheet">
@@ -25,53 +24,48 @@
 
     <!--Nav bar-->
 
-    <nav class=" container-fluid position-fixed navbar navbar-expand-lg navbar-dark bg-burdeo border-bottom border-white">
-        <a class="navbar-brand logo">TRINI</a>
+    <nav class="container-fluid position-fixed navbar navbar-expand-lg navbar-dark bg-burdeo border-bottom border-white">
+        <div class="container">  
+            <a class="navbar-brand logo">TRINI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse " id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#hero-section">inicio</a><span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">acerca de mí</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#timeline">experiencias</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        proyectos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="./assets/links/meet&coffee/">meet&coffee</a>
-                        <a class="dropdown-item" href="./assets/links/iguanaPage/index.html">iguana page</a>
-                        <a class="dropdown-item" href="./assets/links/cuppon/index.html">cuppon</a>
-                        <a class="dropdown-item" href="./assets/links/suricata/index.html">suricata</a>
-                        <a class="dropdown-item" href="./assets/links/ricomida/index.html">ricomida</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">hablemos!</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero-section">inicio</a><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">acerca de mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#timeline">experiencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">hablemos!</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
+    
 
     <!--Hero section-->
 
-    <header id="hero-section" class="hero-section mt-5 mb-2 border-bottom border-white">
-        <h1 class="display-1 p-3 d-inline heading-dark align-middle">TRINI</h1>
-        <img src="./assets/img/yo.png" alt="Trini icon" class="mx-2 d-inline display-1"></img>
-    </header>
+    <section id="hero-section" class="hero-section mt-5 mb-2 border-bottom border-white">
+        <div class="p-3 container">
+            <h1 class="display-1 p-3 d-inline heading-dark align-middle">TRINI</h1>
+            <img src="favicon.png" alt="Trini icon" class="mx-2 d-inline display-1"></img>
+        </div>
+    </section>
 
     <!--About-->
 
-    <section id="about" class="about bg-burdeo border-bottom border-white mb-5 d-none d-sm-block">
+    <section id="about" class="descripcion about bg-burdeo border-bottom border-white mb-5 d-none d-sm-block">
         <div class="container text-justify py-5">
             <h2 class="text-center pb-5 heading-light">¿Quién soy?</h2>
             <div class="row">
@@ -86,113 +80,96 @@
     <div class="row">
         <div class="col-md-6">
             <!--Timeline-->
-            <section id="timeline" class="timeline my-5 py-3 px-0">
+            <section id="timeline" class="timeline experiencia my-5 py-3 px-0">
                 <h2 class="heading-dark text-center pb-5">EXPERIENCIAS</h2>
                 <div class="row">
                     <div class="py-2 px-4 col-6 text-right border-right border-danger">
                         <div class="time">
-                            <h3 data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Desarrollo Web Fullstack Desafio Latam">2020</h3>
+                            <img src="./assets/img/desafio.png" class="w-50 mr-2 align-middle d-inline" alt="logo desafio latam">
+                            <h3 class="d-inline align-middle" data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Desarrollo Web Fullstack Desafio Latam">2020</h3>
                         </div>
                     </div>
                     <div class="py-2 px-4 col-6 border-left border-danger">
-                        <div class="text-left">
-                            <img src="./assets/img/desafio.png" class="w-50" alt="logo desafio latam">
-                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="py-2 px-4 col-6 border-right border-warning">
-                        <div class="text-right">
-                            <img src="./assets/img/udp.png" class="w-50" alt="logo udp">
-                        </div>
                     </div>
                     <div class="py-2 px-4 col-6 border-left border-warning">
                         <div class="time">
-                            <h3 data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Publicidad UDP">2019</h3>
+                            <h3 class="d-inline align-middle" data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Publicidad UDP">2019</h3>
+                            <img src="./assets/img/udp.png" class="w-50 align-middle d-inline" alt="logo udp">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="py-2 px-4 col-6 text-right border-right border-success">
                         <div class="time">
-                            <h3 data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Publicidad UDP">2018</h3>
+                            <img src="./assets/img/udp.png" class="w-50 align-middle d-inline" alt="logo udp">
+                            <h3 class="d-inline align-middle" data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Publicidad UDP">2018</h3>
                         </div>
                     </div>
                     <div class="py-2 px-4 col-6 border-left border-success">
-                        <div class="text-left">
-                            <img src="./assets/img/udp.png" class="w-50" alt="logo udp">
-                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="py-2 px-4 col-6 border-right border-info">
-                        <div class="text-right">
-                            <img src="./assets/img/puc.png" alt="logo puc">
-                        </div>
                     </div>
                     <div class="py-2 px-4 col-6 border-left border-info">
                         <div class="time">
-                            <h3 data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Ingeniería PUC">2017</h3>
+                            <h3 class="d-inline align-middle" data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Ingeniería PUC">2017</h3>
+                            <img src="./assets/img/puc.png" alt="logo puc" class="align-middle ml-2 d-inline">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="py-2 px-4 col-6 text-right border-right border-primary">
                         <div class="time">
-                            <h3 data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Ingeniería PUC">2016</h3>
+                            <img src="./assets/img/puc.png" alt="logo puc" class="align-middle mr-2 d-inline">
+                            <h3 class="d-inline align-middle" data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Ingeniería PUC">2016</h3>
                         </div>
                     </div>
                     <div class="py-2 px-4 col-6 border-left border-primary">
-                        <div class="text-left">
-                            <img src="./assets/img/puc.png" alt="logo puc">
-                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="py-2 px-4 col-6 border-right border-info">
-                        <div class="text-right">
-                            <img src="./assets/img/puc.png" alt="logo puc">
-                        </div>
                     </div>
                     <div class="py-2 px-4 col-6 border-left border-info">
                         <div class="time">
-                            <h3 data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Ingeniería PUC">2015</h3>
+                            <h3 class="d-inline align-middle" data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Ingeniería PUC">2015</h3>
+                            <img src="./assets/img/puc.png" alt="logo puc" class="align-middle ml-2 d-inline">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="py-2 px-4 col-6 text-right border-right border-success">
                         <div class="time">
-                            <h3 data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Barista en Starbucks">2014</h3>
+                            <img src="./assets/img/starbucks.png" alt="logo starbucks" class="align-middle d-inline mr-2">
+                            <h3 class="d-inline align-middle" data-toggle="tooltip" data-trigger="hover" data-placement="left" title="Barista en Starbucks">2014</h3>
                         </div>
                     </div>
                     <div class="py-2 px-4 col-6 border-left border-success">
-                        <div class="text-left">
-                            <img src="./assets/img/starbucks.png" alt="logo starbucks">
-                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="py-2 px-4 col-6 border-right border-warning">
-                        <div class="time">
-                            <h3></h3>
-                        </div>
                     </div>
                     <div class="py-2 px-4 col-6 border-left border-warning">
                         <div class="time">
-                            <h3 data-toggle="tooltip" data-trigger="hover" data-placement="left" title="IVº Medio Colegio Santo Domingo">2013</h3>
+                            <h3 class="d-inline" data-toggle="tooltip" data-trigger="hover" data-placement="left" title="IVº Medio Colegio Santo Domingo">2013</h3>
+                            <img src="./assets/img/colegio.png" alt="logo colegio santo domingo" class="align-middle d-inline ml-2">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="py-2 px-4 col-6 border-right border-white">
                         <div class="time">
-                            <h3></h3>
                         </div>
                     </div>
-                    <div class="py-2 px-4 col-6 border-left border-white">
+                        <div class="py-2 px-4 col-6 border-left border-white">
+                        </div>
                     </div>
-                </div>
                 <div class="time">
                     <h3 class="text-center mt-3" data-toggle="tooltip" data-trigger="hover" data-placement="top" title="El comienzo de todo">1995</h3>
                 </div>
@@ -201,87 +178,87 @@
 
             <!--Projects-->
         <div class="col-md-5">
-        <section id="projects" class="projects mt-5 pt-3" >
-            <h2 class="heading-dark text-center pb-5">PROYECTOS</h2>
-    
-            <div class="container">
-                <div id="carousel-projectsControls" class="carousel slide mb-5 px-5" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="card bg-transparent">
-                                <img class="card-img-top w-100" src="./assets/img/meet_coffee.png" alt="meet&coffee page">
-                                <div class="card-body text-center">
-                                    <h3 class="card-title mt-5">Meet & Coffee</h3>
-                                    <p class="card-text">Descubre lo último en tecnología bebiendo café</p>
-                                    <a href="assets/links/meet&coffee/index.html" class="btn bg-burdeo" target="_blank">VER MÁS</a>
+           <section id="projects" class="projects trabajos mt-5 pt-3" >
+                <h2 class="heading-dark text-center pb-5">PROYECTOS</h2>
+                <div class="container">
+                    <div id="carousel-projectsControls" class="carousel slide mb-5 px-5" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top w-100" src="./assets/img/meet_coffee.png" alt="meet&coffee page">
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title mt-5">Meet & Coffee</h3>
+                                        <p class="card-text">Descubre lo último en tecnología bebiendo café</p>
+                                        <a href="assets/links/meet&coffee/index.html" class="btn bg-burdeo" target="_blank">VER MÁS</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        
-                        <div class="carousel-item">
-                            <div class="card bg-transparent">
-                                <img class="card-img-top w-100" src="./assets/img/iguana_page.png" alt="iguana page">
-                                <div class="text-center card-body">
-                                    <h3 class="mt-5">Iguana Page</h3>
-                                    <p class="card-text">Aprende más sobre las iguanas</p>
-                                    <a href="./assets/links/iguanaPage/index.html" class="btn bg-burdeo " target="_blank">VER MÁS</a>
-                                </div>
-                                    
-                            </div>
-                        </div>
-        
-                        <div class="carousel-item">
-                            <div class="card bg-transparent">
-                                <img class="card-img-top w-100" src="./assets/img/cuppon.png" alt="cuppon page">
-                            </div>
-                            <div class="card-body text-center">
-                                <h3 class="mt-5">Cuppon</h3>
-                                <p class="card-text">Consigue los mejores descuentos</p>
-                                <a href="./assets/links/cuppon/index.html" class="btn bg-burdeo" target="_blank">VER MÁS</a>
                             </div>
                             
-                            
-                        </div>
-        
-                        <div class="carousel-item">
-                            <div class="card bg-transparent">
-                                <img class="card-img-top w-100" src="./assets/img/suricata.png" alt="suricata page">
-                                <div class="card-body text-center">
-                                    <h3 class="mt-5">Suricata</h3>
-                                    <p class="card-text">Disfruta la mejor comida</p>
-                                    <a href="./assets/links/suricata/index.html" class="btn bg-burdeo" target="_blank">VER MÁS</a>
+                            <div class="carousel-item">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top w-100" src="./assets/img/iguana_page.png" alt="iguana page">
+                                    <div class="text-center card-body">
+                                        <h3 class="mt-5">Iguana Page</h3>
+                                        <p class="card-text">Aprende más sobre las iguanas</p>
+                                        <a href="./assets/links/iguanaPage/index.html" class="btn bg-burdeo " target="_blank">VER MÁS</a>
+                                    </div>
+                                        
                                 </div>
                             </div>
-                        </div>
+            
+                            <div class="carousel-item">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top w-100" src="./assets/img/cuppon.png" alt="cuppon page">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 class="mt-5">Cuppon</h3>
+                                    <p class="card-text">Consigue los mejores descuentos</p>
+                                    <a href="./assets/links/cuppon/index.html" class="btn bg-burdeo" target="_blank">VER MÁS</a>
+                                </div>
+                                
+                                
+                            </div>
+            
+                            <div class="carousel-item">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top w-100" src="./assets/img/suricata.png" alt="suricata page">
+                                    <div class="card-body text-center">
+                                        <h3 class="mt-5">Suricata</h3>
+                                        <p class="card-text">Disfruta la mejor comida</p>
+                                        <a href="./assets/links/suricata/index.html" class="btn bg-burdeo" target="_blank">VER MÁS</a>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="carousel-item">
-                            <div class="card bg-transparent">
-                                <img src="./assets/img/ricomida.png" alt="ricomida page" class="card-img-top w-100">
-                                <div class="card-body text-center">
-                                    <h3 class="mt-5">Ricomida</h3>
-                                    <p class="card-text">Encuentra las mejores recetas</p>
-                                    <a href="./assets/links/ricomida/index.html" class="btn bg-burdeo">VER MÁS</a>
+                            <div class="carousel-item">
+                                <div class="card bg-transparent">
+                                    <img src="./assets/img/ricomida.png" alt="ricomida page" class="card-img-top w-100">
+                                    <div class="card-body text-center">
+                                        <h3 class="mt-5">Ricomida</h3>
+                                        <p class="card-text">Encuentra las mejores recetas</p>
+                                        <a href="./assets/links/ricomida/index.html" class="btn bg-burdeo">VER MÁS</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carousel-projectsControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-projectsControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    </div>
+                        <a class="carousel-control-prev" href="#carousel-projectsControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-projectsControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        </div>
                 </div>
-            </div>
-        </section>
+           </section>
+        </div>
+
     </div>
 
     <!--Contact-->
     
-    <section id="contact" class="contact bg-burdeo border-top border-white text-center">
+    <section id="contact" class="contact formulario bg-burdeo border-top border-white text-center">
         <h2 class="heading-light my-5 text-center">Contáctame</h2>
         <div class="typeform-widget" data-url="https://form.typeform.com/to/RN3TvXuT" data-transparency="100" style="width: 100%; height: 350px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=RN3TvXuT&utm_source=typeform.com-01EGBTWDH3T3N9PFHXA1WGR9GC-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> 
         </div>
@@ -289,31 +266,27 @@
 
     <!--Footer-->
 
-    <footer class="bg-burdeo border-top border-white text-center text-white py-4">
+    <footer class="footer bg-burdeo border-top border-white text-center text-white py-4">
         <p class="logo text-white my-3">TRINI</p>
 
-        <a href="https://github.com/TriniCorvalan" target="_blank"><i class="fab fa-github mx-5 my-2 icon text-warning"></i></a>
+        <a href="https://github.com/TriniCorvalan" target="_blank"><i class="fab fa-github mx-5 my-2 icon text-white"></i></a>
 
         <a href="https://www.behance.net/trinidadcoc9d7" target="_blank"><i class="fab fa-behance mx-5 my-2 icon text-primary"></i></a>
 
-        <a href="https://www.facebook.com/trini.corvalangutierrez" target="_blank"><i class="fab fa-facebook mx-5 my-2 icon text-white"></i></a>
-
-        <a href="https://www.instagram.com/trinicorvalan" target="_blank"><i class="fab fa-instagram mx-5 my-2 icon text-danger"></i></a>
-
-        <a href="https://www.twitter.com/trinicorvalan1" target="_blank"><i class="fab fa-twitter mx-5 my-2 icon text-info"></i></a>
+        <a href="https://www.instagram.com/trinicorvalan" target="_blank"><i class="fab fa-instagram mx-5 my-2 icon text-warning"></i></a>
     </footer>
 
 
     <!--jQuery 3.3.1.min-->
-    <script src="./assets/js/jquery-3.3.1.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <!--Popper .min-->
-    <script src="./assets/js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 
     <!--Bootstrap JS-->
-    <script src="./assets/js/bootstrap-4.2.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <!--Mi script-->
     <script src="./assets/js/script.js"></script>
+
 </body>
 </html>
